@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    color: #00ADB5;
+    align-items: center;
+    background-color: #393E46;
+}
+
+.input{
+    background-color: #222831;
+    border: none;
+    width: auto;
+    height: 30px;
+    border-radius: 2px;
+    color: #EEEEEE;
+}
+
+.buttonSearch{
+    border: none;
+    border-radius: 2px;
+    background-color: #00ADB5;
+    color: #EEEEEE;
+    width: auto;
+    height: 30px;
+    margin-left: 10px;
+    transition: 3s;
+}
