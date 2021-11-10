@@ -8,7 +8,7 @@ export default function Header(){
                 <h2>😳</h2>
             </div>
             <div>
-                <h2>React components 🎨</h2>
+                <h2>React Widgets 🎨</h2>
             </div>
             <div>
                 <input className={styles.input} type="text"></input><button className={styles.buttonSearch}>search</button>

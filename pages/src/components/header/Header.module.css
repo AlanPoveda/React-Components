@@ -1,9 +1,11 @@
 .header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #00ADB5;
     align-items: center;
     background-color: #393E46;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .input{

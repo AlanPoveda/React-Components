@@ -1,0 +1,16 @@
+.menu{
+    display: flex;
+    justify-content: end;
+    color: #EEEE;
+    text-align: center;
+    padding-right: 150px;
+
+    li{
+       list-style-type: none; 
+       transition: 2s;
+       margin-bottom: 4px;
+    }
+    a:hover{
+        color: #00ADB5;
+    }
+}
