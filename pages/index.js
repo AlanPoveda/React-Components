@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from './page.module.scss'
+import styles from './page.module.css'
 
 import Header from "./src/components/Header/index"
 import RightMenu from './src/components/RightMenu/index'
