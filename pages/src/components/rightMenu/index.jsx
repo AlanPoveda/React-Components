@@ -1,4 +1,4 @@
-import styles from "../rightMenu/RightMenu.module.scss"
+import styles from "./RightMenu.module.scss"
 
 export default function RightMenu(){
 
