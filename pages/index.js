@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
-import Header from "./src/components/Header/index.jsx"
-import RightMenu from './src/components/RightMenu/index.jsx'
-import NavBar from './src/components/NavBar/index.jsx'
-import ContentWidget from './src/components/contentWidget/index.jsx'
+import Header from "./src/components/Header"
+import RightMenu from './src/components/RightMenu'
+import NavBar from './src/components/NavBar'
+import ContentWidget from './src/components/contentWidget'
 
 export default function Home() {
   return (
