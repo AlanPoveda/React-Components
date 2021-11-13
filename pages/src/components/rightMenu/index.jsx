@@ -1,4 +1,4 @@
-import styles from "./RightMenu.module.scss"
+import styles from "./RightMenu.module.css"
 
 export default function RightMenu(){
 
@@ -6,9 +6,9 @@ export default function RightMenu(){
         <div className={styles.menu}> 
             <ul>
             <h3>Indice</h3>
-                <li><a href="#">Header</a></li>
-                <li><a href="#">body</a></li>
-                <li><a href="#">footer</a></li>
+                <li className={styles.list}><a className={styles.link} href="#">Header</a></li>
+                <li className={styles.list}><a className={styles.link} href="#">body</a></li>
+                <li className={styles.list}><a className={styles.link} href="#">footer</a></li>
             </ul>
         </div>
     );

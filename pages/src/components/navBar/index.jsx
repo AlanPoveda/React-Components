@@ -1,4 +1,4 @@
-import styles from "./NavBar.module.scss"
+import styles from "./NavBar.module.css"
 
 export default function NavBar(){
 
@@ -8,7 +8,7 @@ export default function NavBar(){
                 <li><a href="">Home</a></li>
                 <li><a href="">Header</a></li>
                 <li><a href="">Menus</a></li>
-                <li><a href="">Caroucell</a></li>
+                <li><a className={styles.link} href="">Caroucell</a></li>
             </ul>
             
         </div>

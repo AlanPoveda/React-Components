@@ -1,0 +1,11 @@
+.menu{
+    color: #EEEE;
+}
+
+.list{
+    list-style-type: none; 
+    margin-bottom: 4px;
+ }
+ .link:hover{
+     color: #00ADB5;
+ }
