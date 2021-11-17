@@ -1,10 +1,10 @@
 import Image from 'next/image'
 
 
-import Header from "./src/components/Header"
-import RightMenu from './src/components/RightMenu'
-import NavBar from './src/components/NavBar'
-import ContentWidget from './src/components/contentWidget'
+import Header from "./src/components/Header/index"
+import RightMenu from './src/components/RightMenu/index'
+import NavBar from './src/components/NavBar/index'
+import ContentWidget from './src/components/contentWidget/index'
 
 export default function Home() {
   return (
