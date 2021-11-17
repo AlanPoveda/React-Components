@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 
-import Header from "./src/components/Header/index"
+//import Header from "./src/components/Header/index"
 //import RightMenu from './src/components/RightMenu/index'
 //import NavBar from './src/components/NavBar/index'
 //import ContentWidget from './src/components/ContentWidget/index'
@@ -9,7 +9,7 @@ import Header from "./src/components/Header/index"
 export default function Home() {
   return (
     <div>
-      <Header />
+      
       <div>
       
       </div>
