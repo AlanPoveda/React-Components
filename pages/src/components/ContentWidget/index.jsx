@@ -1,4 +1,4 @@
-import styles from "../contentWidget/ContentWidget.module.css"
+import styles from "../ContentWidget/contentWidget.module.css"
 
 export default function ContentWidget(){
 
