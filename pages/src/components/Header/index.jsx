@@ -1,18 +1,21 @@
-import styled from "styled-components"
-
-
+import styled, { ThemeConsumer } from "styled-components"
 
 
 export default function Header(){
     return(
-        <div>
+        <HeaderDiv>
             <Title>Header</Title>
-        </div>
+        </HeaderDiv>
     );
 }
 
 
 const Title = styled.h1`
-    background: red;
-    color: green;
+    color: ${({ theme })=> theme.colors.text};
+    text-align: center;
+`;
+
+const HeaderDiv = styled.div`
+    background: ${({ theme }) => theme.colors.secondary};
+
 `;

@@ -1,11 +1,15 @@
-
+import styled from "styled-components"
 
 export default function Content(){
 
 
     return(
         <div>
-            <p>This is a content</p>
+            <Text>This is a content</Text>
         </div>
     );
 }
+
+const Text = styled.p`
+  color: ${({ theme })=>theme.colors.text}  
+`;
