@@ -1,10 +1,18 @@
-import styles from "./styles.module.scss"
+import styled from "styled-components"
+
+
 
 
 export default function Header(){
     return(
         <div>
-            <h1 className={styles.title}>Header</h1>
+            <Title>Header</Title>
         </div>
     );
 }
+
+
+const Title = styled.h1`
+    background: red;
+    color: green;
+`;
