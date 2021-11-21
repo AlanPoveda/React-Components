@@ -3,9 +3,10 @@ import { ThemeProvider } from 'styled-components'
 
 const theme = {
   colors: {
-    primary: '#222831',
+    primary: '#FFFFFF',
     secondary: '#393E46',
-    text: '#EEEEEE',
+    text: '#37447E',
+    secondText: '#37447E',
     message: '#00ADB5'
   }
 }
