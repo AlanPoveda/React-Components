@@ -18,6 +18,7 @@ const HeaderDiv = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 `;
 
 const MenuLinksHeader = styled.div`
