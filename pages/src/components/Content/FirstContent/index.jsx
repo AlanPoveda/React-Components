@@ -27,7 +27,7 @@ const Text = styled.p`
 
 const ButtomStarted = styled.button`
   color: ${({ theme }) => theme.colors.primary};
-  background: #111b47;
+  background: ${({ theme })=>theme.colors.buttonColor};
   width: 200px;
   height: 36px;
   border: none;

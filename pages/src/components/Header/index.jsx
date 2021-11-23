@@ -36,7 +36,7 @@ const Title = styled.h1`
 `;
 
 const ButtonHeader = styled.button`
-  background: #111b47;
+  background: ${({ theme })=>theme.colors.buttonColor};
   color: ${({ theme }) => theme.colors.primary};
   width: 160px;
   height: 26px;

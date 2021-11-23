@@ -27,7 +27,6 @@ export default function FourthContent() {
 const Content = styled.div`
   margin: 0px 150px 100px;
   display: flexbox;
-  
 `;
 
 
