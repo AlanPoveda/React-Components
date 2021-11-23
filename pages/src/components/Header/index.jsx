@@ -9,7 +9,7 @@ export default function Header() {
         <a href="#">Contact</a>
       </MenuLinksHeader>
       <Title>React-Components</Title>
-      <ButtonHeader>Docks</ButtonHeader>
+      <ButtonHeader>Documents</ButtonHeader>
     </HeaderDiv>
   );
 }
@@ -40,4 +40,10 @@ const ButtonHeader = styled.button`
   height: 26px;
   border: none;
   border-radius: 2px;
+  transition: 1s;
+
+  &:hover{   
+    background: ${({ theme })=> theme.colors.text};
+    cursor: pointer;
+  }
 `;
