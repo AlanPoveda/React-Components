@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import Image from "next/image";
-import ThirdImage from "../../../assets/third-image.svg";
+import FourthImage from "../../../assets/fourth-image.svg";
 
-export default function ThirdContent() {
+export default function FourthContent() {
   return (
     <Content>
       <div>
-        <Image src={ThirdImage} alt="Third Image" width={500} height={500}/>
+        <Image src={FourthImage} alt="Third Image" width={500} height={500}/>
       </div>
       <TextContent>
         <h1>Light, Fast & Powerful</h1>

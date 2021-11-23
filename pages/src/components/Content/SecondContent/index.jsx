@@ -46,7 +46,7 @@ export default function SecondContent() {
 }
 
 const SecondContentInformation = styled.div`
-  margin: 300px 150px 200px;
+  margin: 400px 150px 200px;
   display: flex;
 `;
 
