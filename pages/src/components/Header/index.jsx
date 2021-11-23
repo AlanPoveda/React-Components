@@ -1,10 +1,12 @@
 import styled, { ThemeConsumer } from "styled-components";
+import Link from "next/link"
+
 
 export default function Header() {
   return (
     <HeaderDiv>
       <MenuLinksHeader>
-        <a href="#">Home</a>
+        <Link href="/"><a>Home</a></Link>
         <a href="#">About</a>
         <a href="#">Contact</a>
       </MenuLinksHeader>

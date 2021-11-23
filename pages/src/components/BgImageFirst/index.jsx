@@ -21,6 +21,7 @@ export default function BgImageFirstContent(){
 const ImageConfig = styled.div`
    right: 0;
    position: absolute;
+   transition: 1s;
 
 
 `
