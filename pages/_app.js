@@ -8,7 +8,8 @@ const theme = {
     text: '#37447E',
     secondText: '#37447E',
     message: '#00ADB5',
-    buttonColor: '#111b47;'
+    buttonColor: '#111b47;',
+    footerColor: '#E7ECFF'
   }
 }
 

@@ -18,8 +18,8 @@ export default function FifthContent() {
 
 //
 const Content = styled.div`
-  background: #e7ecff;
-  height: 500px;
+  background: rgb(231, 236, 255, 0.5);
+  height: 50rem;
   width: 100%;
   display: flex;
   justify-content: center;

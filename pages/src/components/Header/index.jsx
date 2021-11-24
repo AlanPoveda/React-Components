@@ -39,7 +39,7 @@ const ButtonHeader = styled.button`
   background: ${({ theme })=>theme.colors.buttonColor};
   color: ${({ theme }) => theme.colors.primary};
   width: 160px;
-  height: 26px;
+  height: 30px;
   border: none;
   border-radius: 2px;
   transition: 1s;
