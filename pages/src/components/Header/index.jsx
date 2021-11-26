@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <HeaderDiv>
       <MenuLinksHeader>
-        <Link href="/"><a>Home</a></Link>
+        <Link href="/knowlage"><a>Home</a></Link>
         <a href="#">About</a>
         <a href="#">Contact</a>
       </MenuLinksHeader>

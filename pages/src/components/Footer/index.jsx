@@ -10,7 +10,7 @@ export default function Footer() {
           <p>©2020 Yourcompany</p>
         </div>
         <div>
-          <h1>Landie</h1>
+          <h1>React-Widgets</h1>
         </div>
         <div>
           <ButtomFooter>Docs</ButtomFooter>
