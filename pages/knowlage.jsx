@@ -1,5 +1,5 @@
-import Header from "./src/components/Header";
-import LateralMenu from "./src/components/LateralMenu";
+import Header from "../src/components/Header";
+import LateralMenu from "../src/components/LateralMenu";
 
 export default function KnowlagePage(){
 
