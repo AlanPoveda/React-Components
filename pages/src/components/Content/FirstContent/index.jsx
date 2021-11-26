@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link"
 
 export default function FirstContent() {
   return (
@@ -7,7 +8,8 @@ export default function FirstContent() {
       <h1>Easy to use and implement</h1>
       <Text>Use the best form to duplicate components in tour website.
       Only widget components to reuse</Text>
-      <ButtomStarted>Get Started</ButtomStarted>
+      <Link href="/knowlage"><a><ButtomStarted>Get Started</ButtomStarted></a></Link>
+      
     </FirstInformation>
   );
 }

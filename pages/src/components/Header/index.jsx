@@ -6,12 +6,12 @@ export default function Header() {
   return (
     <HeaderDiv>
       <MenuLinksHeader>
-        <Link href="/knowlage"><a>Home</a></Link>
+        <Link href="/"><a>Home</a></Link>
         <a href="#">About</a>
         <a href="#">Contact</a>
       </MenuLinksHeader>
-      <Title>React-Components</Title>
-      <ButtonHeader>Documents</ButtonHeader>
+      <Title>React-Widgets</Title>
+      <Link href="/knowlage"><a><ButtonHeader>Documents</ButtonHeader></a></Link>
     </HeaderDiv>
   );
 }

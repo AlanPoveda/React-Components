@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link"
 
 export default function FifthContent() {
   return (
@@ -10,7 +11,7 @@ export default function FifthContent() {
           commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
           et magnis dis parturient montes, nascetur ridiculus{" "}
         </Text>
-        <ButtomFinal>React-Widgets</ButtomFinal>
+        <Link href="/knowlage"><a><ButtomFinal>React-Widgets</ButtomFinal></a></Link>
       </div>
     </Content>
   );

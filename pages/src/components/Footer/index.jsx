@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link"
 
 
 
@@ -13,7 +14,7 @@ export default function Footer() {
           <h1>React-Widgets</h1>
         </div>
         <div>
-          <ButtomFooter>Docs</ButtomFooter>
+        <Link href="/knowlage"><a><ButtomFooter>React-Widgets</ButtomFooter></a></Link>
         </div>
       </FirstFooterContent>
       <LineDiv />
