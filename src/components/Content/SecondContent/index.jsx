@@ -9,33 +9,28 @@ export default function SecondContent() {
   return (
     <SecondContentInformation>
       <div>
-        <h1>Light, Fast & Powerful</h1>
+        <h1>Leve, rápido e poderoso</h1>
         <Text>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus
+          Desenvolva de forma mais rápida e simples, uma aplicação. Apenas copie e cole os nossos Widgest e construa um site muito mais rápido
         </Text>
         <Text>
-          mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-          sem. Nulla consequat massa quis enim.
+          Criados pela comunidade, para usar nos seus projetos mas variados
         </Text>
 
         <MoreInformation>
           <div>
             <CodeIcon />
-            <h3>Easy to use</h3>
+            <h3>Fácil de usar</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor.{" "}
+              Códigos que só precisa copiar e colar{" "}
             </p>
           </div>
 
           <div>
             <UsersIcon />
-            <h3>To your team reuse</h3>
+            <h3>Reutilize</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor.
+              Feitos para ser reutilizados pelo seu time
             </p>
           </div>
         </MoreInformation>

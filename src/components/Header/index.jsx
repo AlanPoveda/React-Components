@@ -7,11 +7,11 @@ export default function Header() {
     <HeaderDiv>
       <MenuLinksHeader>
         <Link href="/"><a>Home</a></Link>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
       </MenuLinksHeader>
       <Title>React-Widgets</Title>
-      <Link href="/knowlage"><a><ButtonHeader>Documents</ButtonHeader></a></Link>
+      <Link href="/knowlage"><a><ButtonHeader>Documentação</ButtonHeader></a></Link>
     </HeaderDiv>
   );
 }

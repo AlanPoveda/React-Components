@@ -4,11 +4,10 @@ import Link from "next/link"
 export default function FirstContent() {
   return (
     <FirstInformation>
-      <h1>Utilize react components in your website</h1>
-      <h1>Easy to use and implement</h1>
-      <Text>Use the best form to duplicate components in tour website.
-      Only widget components to reuse</Text>
-      <Link href="/knowlage"><a><ButtomStarted>Get Started</ButtomStarted></a></Link>
+      <h1>Copie e cole vários Widgest para usar no seu projeto</h1>
+      <h1>Fácil de usar, fácil de implementar</h1>
+      <Text>Widgtes são pedaços de códigos, que podem ser reutilizados nos teus projetos. Acesse e veja</Text>
+      <Link href="/knowlage"><a><ButtomStarted>Vamos começar</ButtomStarted></a></Link>
       
     </FirstInformation>
   );

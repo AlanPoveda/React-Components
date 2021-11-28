@@ -9,15 +9,12 @@ export default function FourthContent() {
         <Image src={FourthImage} alt="Third Image" width={500} height={500}/>
       </div>
       <TextContent>
-        <h1>Light, Fast & Powerful</h1>
+        <h1>Compartilhe</h1>
         <Text>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus{" "}
+          Compartilhe o código com seu time, faça seu tempo valer a pena{" "}
         </Text>
         <Text>
-          mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-          sem. Nulla consequat massa quis enim.
+          Agilize o tempo de desenvolvimento e tenha resultados rápidos
         </Text>
       </TextContent>
     </Content>

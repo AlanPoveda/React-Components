@@ -5,13 +5,11 @@ export default function FifthContent() {
   return (
     <Content>
       <div>
-        <h1>A Price To Suit Everyone</h1>
+        <h1>Feito pela comunidade</h1>
         <Text>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus{" "}
+          Não será cobrada nenhuma taxa, nem nada. Totalmente gratuito para ajudar a comunidade React{" "}
         </Text>
-        <Link href="/knowlage"><a><ButtomFinal>React-Widgets</ButtomFinal></a></Link>
+        <Link href="/knowlage"><a><ButtomFinal>Documentação</ButtomFinal></a></Link>
       </div>
     </Content>
   );

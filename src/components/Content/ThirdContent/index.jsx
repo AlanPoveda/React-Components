@@ -9,15 +9,12 @@ export default function ThirdContent() {
         <Image src={ThirdImage} alt="Third Image" width={500} height={500}/>
       </div>
       <TextContent>
-        <h1>Light, Fast & Powerful</h1>
+        <h1>Agilidade</h1>
         <Text>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus{" "}
+          Feitos usando as ultimas tecnologias. React e styled-components, para ser apenas um único código{" "}
         </Text>
         <Text>
-          mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-          sem. Nulla consequat massa quis enim.
+          Todo o código e estilos em um lugar só
         </Text>
       </TextContent>
     </Content>

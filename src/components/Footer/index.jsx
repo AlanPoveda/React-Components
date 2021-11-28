@@ -8,21 +8,21 @@ export default function Footer() {
     <FooterConfig>
       <FirstFooterContent>
         <div>
-          <p>©2020 Yourcompany</p>
+          <p>©2020 FPED</p>
         </div>
         <div>
           <h1>React-Widgets</h1>
         </div>
         <div>
-        <Link href="/knowlage"><a><ButtomFooter>React-Widgets</ButtomFooter></a></Link>
+        <Link href="/knowlage"><a><ButtomFooter>Documentação</ButtomFooter></a></Link>
         </div>
       </FirstFooterContent>
       <LineDiv />
       <SecondFooterContent>
         <DefaultLinks>
           <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Contact</a>
+          <a href="">Sobre</a>
+          <a href="">Contato</a>
         </DefaultLinks>
       </SecondFooterContent>
     </FooterConfig>
