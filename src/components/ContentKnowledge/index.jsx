@@ -6,7 +6,7 @@ export default function ContentKnowledge(props){
     return(
         <Content>
             <Title>{props.title}</Title>
-            <Text>É necessário primeiro fazer uma aplicação <a target="_blank" href="https://pt-br.reactjs.org/">React</a></Text>
+            <Text>É necessário primeiro fazer uma aplicação <a href="https://pt-br.reactjs.org/">React</a></Text>
             
         </Content>
     );
