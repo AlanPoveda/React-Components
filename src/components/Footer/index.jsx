@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import Link from "next/link"
+
+import PrimaryButton from "../PrimaryButton";
 
 
 
@@ -14,7 +15,7 @@ export default function Footer() {
           <h1>React-Widgets</h1>
         </div>
         <div>
-        <Link href="/knowlage"><a><ButtomFooter>Documentação</ButtomFooter></a></Link>
+        <PrimaryButton linkButton="/knowledge" buttonText="Documentação" />
         </div>
       </FirstFooterContent>
       <LineDiv />
@@ -49,20 +50,6 @@ const FirstFooterContent = styled.div`
 
 `;
 
-const ButtomFooter = styled.button`
-  color: ${({ theme }) => theme.colors.primary};
-  background: ${({ theme }) => theme.colors.buttonColor};
-  width: 200px;
-  height: 36px;
-  border: none;
-  border-radius: 2px;
-  transition: 1s;
-
-  &:hover {
-    background: ${({ theme }) => theme.colors.text};
-    cursor: pointer;
-  }
-`;
 
 const LineDiv = styled.hr`
   width: 80%;

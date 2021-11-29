@@ -8,10 +8,9 @@ export default function LateralMenu(){
     return(
         <SideMenu>
             <dt>Documentação</dt>
-                <dd><a href="">Basico</a></dd>
+                <dd><a >Basico</a></dd>
             <dt>Widgets</dt>
                 <dd>Header</dd>
-
         </SideMenu>
     );
 

@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import Link from "next/link"
+
+import PrimaryButton from "../../PrimaryButton";
 
 export default function FifthContent() {
   return (
@@ -9,7 +10,7 @@ export default function FifthContent() {
         <Text>
           Não será cobrada nenhuma taxa, nem nada. Totalmente gratuito para ajudar a comunidade React{" "}
         </Text>
-        <Link href="/knowlage"><a><ButtomFinal>Documentação</ButtomFinal></a></Link>
+       <PrimaryButton linkButton="/knowledge" buttonText="Documentação" />
       </div>
     </Content>
   );
@@ -24,26 +25,15 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+  
 `;
 
 const Text = styled.p`
   color: ${({ theme }) => theme.colors.text};
   font-size: 18px;
   margin: 0% 20%;
+  padding-bottom: 20px;
 `;
 
-const ButtomFinal = styled.button`
-  color: ${({ theme }) => theme.colors.primary};
-  background: ${({ theme })=>theme.colors.buttonColor};
-  width: 200px;
-  height: 36px;
-  border: none;
-  border-radius: 2px;
-  margin-top: 40px;
-  transition: 1s;
 
-  &:hover {
-    background: ${({ theme }) => theme.colors.text};
-    cursor: pointer;
-  }
-`;
+
