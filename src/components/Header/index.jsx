@@ -2,7 +2,9 @@ import styled, { ThemeConsumer } from "styled-components";
 import Link from "next/link"
 
 
-export default function Header() {
+
+export default function Header(props) {
+  const linkButton = props.linkButton
   return (
     <HeaderDiv>
       <MenuLinksHeader>
@@ -10,8 +12,8 @@ export default function Header() {
         <a href="#">Sobre</a>
         <a href="#">Contato</a>
       </MenuLinksHeader>
-      <Title>React-Widgets</Title>
-      <Link href="/knowlage"><a><ButtonHeader>Documentação</ButtonHeader></a></Link>
+      <Title>{props.title}</Title>
+      <Link href={linkButton}><a><ButtonHeader>{props.button}</ButtonHeader></a></Link>
     </HeaderDiv>
   );
 }

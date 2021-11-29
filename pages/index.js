@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <BgImageFirstContent />
-        <Header />
+        <Header title="React-Widgets" button="Documentação" linkButton="/knowledge"/>
         <Content />
         <Footer />
     </div>

@@ -4,9 +4,9 @@ import Link from "next/link"
 export default function FirstContent() {
   return (
     <FirstInformation>
-      <h1>Copie e cole vários Widgest para usar no seu projeto</h1>
+      <h1>Copie e cole vários Widgets para usar no seu projeto</h1>
       <h1>Fácil de usar, fácil de implementar</h1>
-      <Text>Widgtes são pedaços de códigos, que podem ser reutilizados nos teus projetos. Acesse e veja</Text>
+      <Text>Widgets são pedaços de códigos, que podem ser reutilizados nos teus projetos. Acesse e veja</Text>
       <Link href="/knowlage"><a><ButtomStarted>Vamos começar</ButtomStarted></a></Link>
       
     </FirstInformation>
