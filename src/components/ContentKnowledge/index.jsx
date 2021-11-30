@@ -7,22 +7,22 @@ export default function ContentKnowledge(props){
         <Content>
             <Title>{props.title}</Title>
             <Text>É necessário primeiro fazer uma aplicação <a href="https://pt-br.reactjs.org/">React</a></Text>
-            
+
         </Content>
     );
 
 }
 
 
-
+const Content = styled.div`
+    margin: 7% 25%;
+`
 
 const Title = styled.h1`
     color: ${({ theme })=>theme.colors.buttonColor};
 `
 
-const Content = styled.div`
-    margin: 7% 25%;
-`
+
 
 const Text = styled.p`
     max-width: 40%;
