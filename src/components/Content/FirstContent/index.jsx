@@ -9,7 +9,7 @@ export default function FirstContent() {
       <h1>Copie e cole vários Widgets para usar no seu projeto</h1>
       <h1>Fácil de usar, fácil de implementar</h1>
       <Text>Widgets são pedaços de códigos, que podem ser reutilizados nos teus projetos. Acesse e veja</Text>
-      <PrimaryButton linkButton="/knowlage" buttonText="Documentação"/>
+      <PrimaryButton linkButton="/knowledge" buttonText="Documentação"/>
       
       
     </FirstInformation>
