@@ -6,7 +6,7 @@ export default function FourthContent() {
   return (
     <Content>
       <div>
-        <Image src={FourthImage} alt="Third Image" width={500} height={500}/>
+        <Image src={FourthImage} alt="Third Image" width={500} height={500} />
       </div>
       <TextContent>
         <h1>Compartilhe</h1>
@@ -26,15 +26,13 @@ const Content = styled.div`
   display: flexbox;
 `;
 
-
 const TextContent = styled.div`
-    margin: 10%;
-    
-`
+   margin: 10%;  
+
+`;
 
 const Text = styled.p`
   color: ${({ theme }) => theme.colors.text};
   font-size: 18px;
   max-width: 58%;
-
 `;

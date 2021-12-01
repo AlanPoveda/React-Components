@@ -11,8 +11,10 @@ export default function Content() {
     <ContentHome>
       <FirstContent />
       <SecondContent />
-      <ThirdContent />
-      <FourthContent />
+      
+        <ThirdContent />
+        <FourthContent />
+      
       <FifthContent />
 
 

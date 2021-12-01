@@ -6,7 +6,7 @@ export default function ThirdContent() {
   return (
     <Content>
       <div>
-        <Image src={ThirdImage} alt="Third Image" width={500} height={500}/>
+        <Image src={ThirdImage} alt="Third Image" width={500} height={500} />
       </div>
       <TextContent>
         <h1>Agilidade</h1>
@@ -29,8 +29,7 @@ const Content = styled.div`
 
 
 const TextContent = styled.div`
-    margin: 10%;
-    
+    margin: 10%;  
 `
 
 const Text = styled.p`

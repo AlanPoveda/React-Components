@@ -43,6 +43,8 @@ export default function SecondContent() {
 const SecondContentInformation = styled.div`
   margin: 400px 150px 150px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Text = styled.p`
