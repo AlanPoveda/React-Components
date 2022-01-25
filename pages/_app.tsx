@@ -1,5 +1,6 @@
 import '../src/styles/globals.css'
 import { ThemeProvider } from 'styled-components'
+import { AppProps } from 'next/app'
 
 const theme = {
   colors: {
@@ -14,7 +15,7 @@ const theme = {
 }
 
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <Component {...pageProps} />

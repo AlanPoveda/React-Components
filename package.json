@@ -8,13 +8,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/node": "^17.0.11",
+    "@types/react": "^17.0.38",
     "next": "12.0.3",
     "next-images": "^1.8.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-markdown": "^7.1.1",
     "styled-components": "^5.3.3",
-    "styled-icons": "^10.45.0"
+    "styled-icons": "^10.45.0",
+    "typescript": "^4.5.5"
   },
   "devDependencies": {
     "babel-plugin-inline-react-svg": "^2.0.1",
