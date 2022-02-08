@@ -1,6 +1,7 @@
-import '../src/styles/globals.css'
+//import '../src/styles/globals.css'
 import { ThemeProvider } from 'styled-components'
 import { AppProps } from 'next/app'
+import { GlobalStyle } from '../src/styles/GlobalStyle'
 
 const theme = {
   colors: {
@@ -12,6 +13,7 @@ const theme = {
     buttonColor: '#111b47;',
     footerColor: '#E7ECFF'
   }
+  
 }
 
 
@@ -19,6 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <Component {...pageProps} />
+      <GlobalStyle />
     </ThemeProvider>
   );
 }
