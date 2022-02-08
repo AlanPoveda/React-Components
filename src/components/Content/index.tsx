@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import FirstContent from "../Content/FirstContent"
+import FirstContent from "./FirstContent"
 import SecondContent from "./SecondContent";
 import ThirdContent from "./ThirdContent";
 import FourthContent from "./FourthContent";
