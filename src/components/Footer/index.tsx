@@ -9,7 +9,7 @@ export default function Footer() {
     <FooterConfig>
       <FirstFooterContent>
         <div>
-          <p>©2020 FPED</p>
+          <p>©2022 Uniquewebi</p>
         </div>
         <div>
           <h1>React-Widgets</h1>

@@ -24,6 +24,7 @@ const HeaderDiv = styled.div`
   align-items: center;
   position: relative;
   padding: 2rem;
+
 `;
 
 const MenuLinksHeader = styled.div`
