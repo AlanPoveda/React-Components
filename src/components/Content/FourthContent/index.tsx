@@ -23,7 +23,11 @@ export default function FourthContent() {
 
 const Content = styled.div`
   margin: 0px 150px 100px;
-  display: flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+
 `;
 
 const TextContent = styled.div`

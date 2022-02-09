@@ -23,6 +23,7 @@ const HeaderDiv = styled.div`
   justify-content: space-around;
   align-items: center;
   position: relative;
+  padding: 2rem;
 `;
 
 const MenuLinksHeader = styled.div`

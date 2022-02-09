@@ -1,6 +1,6 @@
-import Header from "../src/components/Header";
-import LateralMenu from "../src/components/LateralMenu";
-import ContentKnowledge from "../src/components/ContentKnowledge";
+import Header from "../components/Header";
+import { SideBar } from "../components/SideBar";
+import ContentKnowledge from "../components/ContentKnowledge";
 
 
 
@@ -11,7 +11,7 @@ export default function KnowlagePage(){
 
         <div>
             <Header title="React-Widgets" linkButton="/knowledge" button="Documentação"/>
-            <LateralMenu />
+            <SideBar />
             <ContentKnowledge title="Básico" />
             
         </div>

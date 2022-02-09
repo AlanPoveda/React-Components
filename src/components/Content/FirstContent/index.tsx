@@ -20,10 +20,12 @@ const FirstInformation = styled.div`
   margin: 200px 150px;
   h1 {
     color: #091133;
+    padding-bottom: 0.5rem;
   }
 `;
 
 const Text = styled.p`
+  padding: 0.5rem 0 2rem;
   color: ${({ theme }) => theme.colors.text};
   font-size: 18px;
   max-width: 50%;
