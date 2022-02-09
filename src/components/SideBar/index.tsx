@@ -2,19 +2,27 @@ import styled from "styled-components";
 
 import { useState, useEffect } from "react";
 
+
 interface GenreResponseProps {
     id: number;
     name: "action" | "comedy" | "documentary" | "drama" | "horror" | "family";
     title: string;
 }
 
-interface SideBarProps {
-    id: number;
-    onSelectId: (id: number) => void;
+type Post = {
+    id: string
+    title: string
 }
 
-export function SideBar() {
+interface SideBarProps {
+    posts: Post[];
+    
+}
+
+export function SideBar({ posts }: SideBarProps) {
     const [genres, setGenres] = useState<GenreResponseProps[]>([]);
+
+    console.log(posts)
 
     return (
         <SideMenu>
@@ -31,13 +39,12 @@ export function SideBar() {
               selected={id === genre.id}
             />
           ))*/}
-                    <ButtonStyle>Link um</ButtonStyle>
-                    <ButtonStyle>Link um</ButtonStyle>
-                    <ButtonStyle>Link um</ButtonStyle>
-                    <ButtonStyle>Link um</ButtonStyle>
-                    <ButtonStyle>Link um</ButtonStyle>
-                    <ButtonStyle>Link um</ButtonStyle>
-                    <ButtonStyle>Link um</ButtonStyle>{" "}
+          {posts.map((post)=>{
+              return(
+                <LinkStyle key={post.id}>{post.title}</LinkStyle> 
+              );
+          })}
+                    
                 </div>
             </nav>
         </SideMenu>
@@ -53,18 +60,19 @@ const SideMenu = styled.div`
     max-width: 24rem;
 
     padding: 2rem;
-    border-right: 1px solid ${({ theme }) => theme.colors.buttonColor};
+    border-right: 1px solid ${({ theme }) => theme.colors.secondary};
 
     position: absolute;
-  left: 4rem;
-  width: 15rem;
+    left: 4rem;
+    width: 15rem;
+    height: 100%;
 
     h2 {
         padding-bottom: 0.4rem;
     }
 `;
 
-const ButtonStyle = styled.a`
+const LinkStyle = styled.a`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -73,16 +81,18 @@ const ButtonStyle = styled.a`
 
     padding: 0.5rem;
 
-    font-size: 1.125rem;
+    font-size: 0.8rem;
     color: black;
     transition: background 200ms;
 
+    cursor: pointer;
+
     &:hover {
-        color: green;
+        color: ${({ theme }) => theme.colors.secondText};
     }
 
     &.selected {
         background: var(--background-button2);
-        color: var(--yellow);
+        color: red;
     }
 `;
