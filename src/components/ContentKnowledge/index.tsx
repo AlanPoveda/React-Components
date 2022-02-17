@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components"
+import { api } from "../../services/api";
 
 
 interface ContentPosts {
@@ -10,7 +12,14 @@ interface ContentPosts {
 }
 
 export default function ContentKnowledge(){
+    const [title, setTitle] = useState([])
 
+    useEffect(() => {
+        api.get('/api/titles/').then(response => {
+            setTitle(response.data);
+        })
+    },[])
+    console.log(title);
 
     return(
         <Content>
