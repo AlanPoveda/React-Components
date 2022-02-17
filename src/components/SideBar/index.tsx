@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 import { useState, useEffect } from "react";
 import { api } from "../../services/api";
@@ -17,7 +18,6 @@ export function SideBar({ uid, onSelectUID }: SideBarProps) {
         });
     }, []);
 
-    console.log(uid);
 
     return (
         <SideMenu>
@@ -27,12 +27,13 @@ export function SideBar({ uid, onSelectUID }: SideBarProps) {
                 <div>
                     {title.map((post) => {
                         return (
-                            <LinkStyle
-                                key={post.id}
-                                onClick={() => onSelectUID(post.slug)}
-                            >
-                                {post.title}
-                            </LinkStyle>
+                            <Link href={`/knowledge/${post.slug}`} key={post.id}>
+                                <LinkStyle
+                                    onClick={() => onSelectUID(post.slug)}
+                                >
+                                    {post.title}
+                                </LinkStyle>
+                            </Link>
                         );
                     })}
                 </div>
@@ -49,7 +50,6 @@ const SideMenu = styled.div`
 
     max-width: 24rem;
 
-    padding: 2rem;
     border-right: 1px solid ${({ theme }) => theme.colors.secondary};
 
     position: absolute;
@@ -62,7 +62,7 @@ const SideMenu = styled.div`
     }
 `;
 
-const LinkStyle = styled.button`
+const LinkStyle = styled.a`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,8 +74,6 @@ const LinkStyle = styled.button`
     font-size: 0.8rem;
     color: black;
     transition: background 200ms;
-    border: none;
-    background: transparent;
 
     cursor: pointer;
 

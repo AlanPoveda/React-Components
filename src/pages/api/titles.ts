@@ -25,7 +25,7 @@ export default async function titles(request: NextApiRequest, response:NextApiRe
             title: RichText.asText(post.data.title),
             id: post.id,
             slug: post.uid,
-            post: RichText.asHtml(post.data.post)
+          
         };
     });
     

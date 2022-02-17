@@ -4,28 +4,18 @@ import { api } from "../../services/api";
 
 
 interface ContentPosts {
-    posts: {
-        id: string;
+    
         title: string;
-        post: string;
-    }
+        content: string;
+    
 }
 
-export default function ContentKnowledge(){
-    const [title, setTitle] = useState([])
-
-    useEffect(() => {
-        api.get('/api/titles/').then(response => {
-            setTitle(response.data);
-        })
-    },[])
-    console.log(title);
+export default function ContentKnowledge( {title, content}: ContentPosts){
 
     return(
         <Content>
-            <Title></Title>
-            <Text ></Text>
-
+            <Title>{title}</Title>
+            <Text dangerouslySetInnerHTML={{ __html: content }} />
         </Content>
     );
 
