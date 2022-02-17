@@ -50,7 +50,7 @@ const SideMenu = styled.div`
 
     max-width: 24rem;
 
-    border-right: 1px solid ${({ theme }) => theme.colors.secondary};
+    border-right: 1px solid gray;
 
     position: absolute;
     left: 4rem;

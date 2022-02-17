@@ -29,15 +29,26 @@ const Content = styled.div`
 `
 
 const Title = styled.h1`
+    margin-bottom: 2rem;
     color: ${({ theme })=>theme.colors.buttonColor};
 `
 
 
 
 const Text = styled.div`
-    max-width: 40%;
+    max-width: 80%;
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+
     a{
         text-decoration: none;
+    }
+
+    pre {
+        margin-bottom: 0.5rem;
+        background: gray;
     }
 
 `
