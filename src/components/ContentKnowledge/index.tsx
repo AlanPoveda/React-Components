@@ -1,17 +1,28 @@
 import styled from "styled-components"
 
 
-export default function ContentKnowledge(props){
+interface ContentPosts {
+    posts: {
+        id: string;
+        title: string;
+        post: string;
+    }
+}
 
+export default function ContentKnowledge(props: ContentPosts){
+
+    console.log(props.posts)
     return(
         <Content>
-            <Title>{props.title}</Title>
-            <Text>É necessário primeiro fazer uma aplicação <a href="https://pt-br.reactjs.org/">React</a></Text>
+            <Title>{props.posts}</Title>
+            <Text dangerouslySetInnerHTML={{ __html: props.posts }}></Text>
 
         </Content>
     );
 
 }
+
+
 
 
 const Content = styled.div`
@@ -24,7 +35,7 @@ const Title = styled.h1`
 
 
 
-const Text = styled.p`
+const Text = styled.div`
     max-width: 40%;
     a{
         text-decoration: none;

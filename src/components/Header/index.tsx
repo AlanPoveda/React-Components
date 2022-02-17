@@ -1,10 +1,10 @@
-import styled, { ThemeConsumer } from "styled-components";
+import styled from "styled-components";
 import Link from "next/link"
 
 
 
-export default function Header(props) {
-  const linkButton = props.linkButton
+export function Header() {
+  
   return (
     <HeaderDiv>
       <MenuLinksHeader>
@@ -12,8 +12,8 @@ export default function Header(props) {
         <a href="#">Sobre</a>
         <a href="#">Contato</a>
       </MenuLinksHeader>
-      <Title>{props.title}</Title>
-      <Link href={linkButton}><a><ButtonHeader>{props.button}</ButtonHeader></a></Link>
+      <Title>React Components</Title>
+      <Link href='/knowledge/bem-vindo'><a><ButtonHeader>Documents</ButtonHeader></a></Link>
     </HeaderDiv>
   );
 }
@@ -23,7 +23,7 @@ const HeaderDiv = styled.div`
   justify-content: space-around;
   align-items: center;
   position: relative;
-  padding: 2rem;
+  padding: 1rem;
 
 `;
 

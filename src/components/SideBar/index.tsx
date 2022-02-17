@@ -1,13 +1,6 @@
 import styled from "styled-components";
 
-import { useState, useEffect } from "react";
-
-
-interface GenreResponseProps {
-    id: number;
-    name: "action" | "comedy" | "documentary" | "drama" | "horror" | "family";
-    title: string;
-}
+import { useState, useEffect } from "react"
 
 type Post = {
     id: string
@@ -20,7 +13,7 @@ interface SideBarProps {
 }
 
 export function SideBar({ posts }: SideBarProps) {
-    const [genres, setGenres] = useState<GenreResponseProps[]>([]);
+   
 
     console.log(posts)
 
@@ -30,15 +23,7 @@ export function SideBar({ posts }: SideBarProps) {
                 <h2>Componentes</h2>
 
                 <div>
-                    {/*genres.map((genre) => (
-            <Button
-              key={String(genre.id)}
-              title={genre.title}
-              iconName={genre.name}
-              onClick={() => onSelectId(genre.id)}
-              selected={id === genre.id}
-            />
-          ))*/}
+           
           {posts.map((post)=>{
               return(
                 <LinkStyle key={post.id}>{post.title}</LinkStyle> 

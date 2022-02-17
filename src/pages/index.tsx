@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import BgImageFirstContent from "../components/BgImageFirst";
 import Footer from "../components/Footer";
 
@@ -11,11 +10,6 @@ export default function Home() {
         <>
         
             <BgImageFirstContent />
-            <Header
-                title="React-Widgets"
-                button="Documentação"
-                linkButton="/knowledge"
-            />
             <FirstContent />
             <SecondContent />
             <ThirdContent />
