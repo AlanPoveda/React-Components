@@ -9,13 +9,13 @@ interface ContentPosts {
     }
 }
 
-export default function ContentKnowledge(props: ContentPosts){
+export default function ContentKnowledge(){
 
-    console.log(props.posts)
+
     return(
         <Content>
-            <Title>{props.posts}</Title>
-            <Text dangerouslySetInnerHTML={{ __html: props.posts }}></Text>
+            <Title></Title>
+            <Text ></Text>
 
         </Content>
     );

@@ -6,6 +6,7 @@ import { RichText } from "prismic-dom";
 
 import { getPrismicClient } from "../../services/prismicConfiguration";
 import Prismic from "@prismicio/client";
+import { useState } from "react";
 
 type Post = {
     id: string;
@@ -17,46 +18,17 @@ interface PropsPosts {
     posts: Post[];
 }
 
-export default function KnowlagePage({ posts }: PropsPosts) {
-    console.log(posts);
+export default function KnowlagePage() {
+    const [id, setId] = useState('bem-vindo')
 
+    function handleClickButton(uid: string){
+        setId(uid) 
+    }
     // <Header title="React-Widgets" linkButton="/knowledge" button="Documentação"/>
-
     return (
         <div>
-            <SideBar posts={posts} />
-            <ContentKnowledge post={posts} />
+            <SideBar uid={id} onSelectUID={handleClickButton}/>
+            <ContentKnowledge />
         </div>
     );
 }
-
-//Chamada da api apra carregar a página uma unica vez, ainda mais para não consumir a banda
-export const getServerSideProps: GetServerSideProps = async ({params}) => {
-    const prismic = await getPrismicClient();
-
-    
-    const response = await prismic.query<any>(
-        [Prismic.predicates.at("document.type", "components-content")],
-        {
-            fetch: ["title", "content"],
-            pageSize: 100,
-        },
-    );
-
-   
-    const posts = response.results.map((post) => {
-        return {
-            title: RichText.asText(post.data.title),
-            id: post.id,
-            slug: post.uid,
-            post: RichText.asHtml(post.data.post)
-        };
-    });
-    console.log(posts)
-
-    return {
-        props: {
-            posts,
-        },
-    };
-};

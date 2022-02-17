@@ -1,21 +1,23 @@
 import styled from "styled-components";
 
-import { useState, useEffect } from "react"
-
-type Post = {
-    id: string
-    title: string
-}
+import { useState, useEffect } from "react";
+import { api } from "../../services/api";
 
 interface SideBarProps {
-    posts: Post[];
-    
+    uid: string;
+    onSelectUID: (uid: string) => void;
 }
 
-export function SideBar({ posts }: SideBarProps) {
-   
+export function SideBar({ uid, onSelectUID }: SideBarProps) {
+    const [title, setTitle] = useState([]);
 
-    console.log(posts)
+    useEffect(() => {
+        api.get("/api/titles").then((response) => {
+            setTitle(response.data);
+        });
+    }, []);
+
+    console.log(uid);
 
     return (
         <SideMenu>
@@ -23,13 +25,16 @@ export function SideBar({ posts }: SideBarProps) {
                 <h2>Componentes</h2>
 
                 <div>
-           
-          {posts.map((post)=>{
-              return(
-                <LinkStyle key={post.id}>{post.title}</LinkStyle> 
-              );
-          })}
-                    
+                    {title.map((post) => {
+                        return (
+                            <LinkStyle
+                                key={post.id}
+                                onClick={() => onSelectUID(post.slug)}
+                            >
+                                {post.title}
+                            </LinkStyle>
+                        );
+                    })}
                 </div>
             </nav>
         </SideMenu>
@@ -57,7 +62,7 @@ const SideMenu = styled.div`
     }
 `;
 
-const LinkStyle = styled.a`
+const LinkStyle = styled.button`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,6 +74,8 @@ const LinkStyle = styled.a`
     font-size: 0.8rem;
     color: black;
     transition: background 200ms;
+    border: none;
+    background: transparent;
 
     cursor: pointer;
 
